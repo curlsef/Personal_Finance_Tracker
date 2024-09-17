@@ -78,7 +78,7 @@ def add():
     description = get_description()
     CSV.add_entry(date, amount, category, description)
 
-
+####GRAPH#####
 def plot_transactions(df):
     df.set_index("date", inplace=True)
 
@@ -104,7 +104,7 @@ def plot_transactions(df):
     plt.legend()
     plt.grid(True)
     plt.show()
-
+####END GRAPH####
 
 def main():
     while True:
